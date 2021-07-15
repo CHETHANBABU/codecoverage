@@ -1,0 +1,31 @@
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">First Name</label>
+            <label for="">{{userData.first_name}}</label>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Last Name</label>
+            <label for="">{{userData.last_name}}</label>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <label for="">{{userData.email}}</label>
+        </div>
+        <div class="form-group col-md-6">
+            <img [src]='userData.avatar' alt="Avatar" width="30" height="40" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-group col-md-6">
+            <label for="inputAddress">News letter</label>
+            <label for="">{{userAddress.text}}</label>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputAddress">Company</label>
+            <label for="">{{userAddress.company}}</label>
+        </div>
+    </div>
+</form>

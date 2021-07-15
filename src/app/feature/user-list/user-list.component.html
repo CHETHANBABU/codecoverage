@@ -1,0 +1,11 @@
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">List of users</label>
+        <select class="form-control" name="user" placeholder="Select a user" #user="ngModel" [(ngModel)]="model"
+            (change)='handleUserSelect()'>
+            <option *ngFor="let user of userlist" [value]="user.id">
+                {{user.first_name}}
+            </option>
+        </select>
+    </div>
+</form>
